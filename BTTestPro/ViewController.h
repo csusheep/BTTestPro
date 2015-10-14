@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CBCentralManagerDelegate, CBPeripheralDelegate, UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) CBCentralManager *myCBCentralManager;
+@property (nonatomic, strong) NSMutableArray *periphearlList;
+@property (nonatomic, strong) CBPeripheral *connectedPeripheral;
+@property (nonatomic, strong) UILabel * heartRateLabel;
+@property (nonatomic, strong) UITableView *searchResultList;
 
 @end
 

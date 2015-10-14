@@ -10,11 +10,10 @@
 		7D29FF541BC900FD00CE50BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D29FF531BC900FD00CE50BA /* main.m */; };
 		7D29FF571BC900FD00CE50BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D29FF561BC900FD00CE50BA /* AppDelegate.m */; };
 		7D29FF5A1BC900FD00CE50BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D29FF591BC900FD00CE50BA /* ViewController.m */; };
-		7D29FF5D1BC900FD00CE50BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D29FF5B1BC900FD00CE50BA /* Main.storyboard */; };
 		7D29FF5F1BC900FD00CE50BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D29FF5E1BC900FD00CE50BA /* Assets.xcassets */; };
-		7D29FF621BC900FD00CE50BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D29FF601BC900FD00CE50BA /* LaunchScreen.storyboard */; };
 		7D29FF6D1BC900FD00CE50BA /* BTTestProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D29FF6C1BC900FD00CE50BA /* BTTestProTests.m */; };
 		7D29FF781BC900FD00CE50BA /* BTTestProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D29FF771BC900FD00CE50BA /* BTTestProUITests.m */; };
+		7D815BFA1BCCDA640094E918 /* HeartRateDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D815BF91BCCDA640094E918 /* HeartRateDataView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +40,7 @@
 		7D29FF561BC900FD00CE50BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7D29FF581BC900FD00CE50BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7D29FF591BC900FD00CE50BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7D29FF5C1BC900FD00CE50BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D29FF5E1BC900FD00CE50BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7D29FF611BC900FD00CE50BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D29FF631BC900FD00CE50BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D29FF681BC900FD00CE50BA /* BTTestProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTTestProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D29FF6C1BC900FD00CE50BA /* BTTestProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTTestProTests.m; sourceTree = "<group>"; };
@@ -51,6 +48,8 @@
 		7D29FF731BC900FD00CE50BA /* BTTestProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTTestProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D29FF771BC900FD00CE50BA /* BTTestProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTTestProUITests.m; sourceTree = "<group>"; };
 		7D29FF791BC900FD00CE50BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D815BF81BCCDA640094E918 /* HeartRateDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateDataView.h; sourceTree = "<group>"; };
+		7D815BF91BCCDA640094E918 /* HeartRateDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateDataView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +104,9 @@
 				7D29FF561BC900FD00CE50BA /* AppDelegate.m */,
 				7D29FF581BC900FD00CE50BA /* ViewController.h */,
 				7D29FF591BC900FD00CE50BA /* ViewController.m */,
-				7D29FF5B1BC900FD00CE50BA /* Main.storyboard */,
+				7D815BF81BCCDA640094E918 /* HeartRateDataView.h */,
+				7D815BF91BCCDA640094E918 /* HeartRateDataView.m */,
 				7D29FF5E1BC900FD00CE50BA /* Assets.xcassets */,
-				7D29FF601BC900FD00CE50BA /* LaunchScreen.storyboard */,
 				7D29FF631BC900FD00CE50BA /* Info.plist */,
 				7D29FF521BC900FD00CE50BA /* Supporting Files */,
 			);
@@ -246,9 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D29FF621BC900FD00CE50BA /* LaunchScreen.storyboard in Resources */,
 				7D29FF5F1BC900FD00CE50BA /* Assets.xcassets in Resources */,
-				7D29FF5D1BC900FD00CE50BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +273,7 @@
 				7D29FF5A1BC900FD00CE50BA /* ViewController.m in Sources */,
 				7D29FF571BC900FD00CE50BA /* AppDelegate.m in Sources */,
 				7D29FF541BC900FD00CE50BA /* main.m in Sources */,
+				7D815BFA1BCCDA640094E918 /* HeartRateDataView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,25 +307,6 @@
 			targetProxy = 7D29FF741BC900FD00CE50BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7D29FF5B1BC900FD00CE50BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D29FF5C1BC900FD00CE50BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7D29FF601BC900FD00CE50BA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D29FF611BC900FD00CE50BA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7D29FF7A1BC900FD00CE50BA /* Debug */ = {
@@ -415,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BTTestPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.csusheep.BTTestPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BTTestPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.csusheep.BTTestPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +480,7 @@
 				7D29FF7E1BC900FD00CE50BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D29FF7F1BC900FD00CE50BA /* Build configuration list for PBXNativeTarget "BTTestProTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +489,7 @@
 				7D29FF811BC900FD00CE50BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D29FF821BC900FD00CE50BA /* Build configuration list for PBXNativeTarget "BTTestProUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +498,7 @@
 				7D29FF841BC900FD00CE50BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
