@@ -5,5 +5,13 @@
       <ContextState
          contextName = "-[ViewController centralManager:didDiscoverPeripheral:advertisementData:RSSI:]:ViewController.m">
       </ContextState>
+      <ContextState
+         contextName = "-[HeartRateDataView render:value:]:HeartRateDataView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "((M_PI * degrees)/ 180)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

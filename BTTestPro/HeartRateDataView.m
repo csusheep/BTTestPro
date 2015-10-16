@@ -6,8 +6,12 @@
 //  Copyright © 2015年 刘 晓东. All rights reserved.
 //
 
-#import "HeartRateDataView.h"
 
+
+#import "HeartRateDataView.h"
+#import <CoreGraphics/CoreGraphics.h>
+
+#define   DEGREES_TO_RADIANS(degrees)  ((M_PI * degrees)/ 180)
 
 @interface HeartRateDataView()
 {
@@ -52,19 +56,24 @@
     CGContextSetLineWidth(context, 2);
     CGContextBeginPath(context);
     CGContextSaveGState(context);
-
-    float xpos = bounds.size.width;
-    float ypos = bounds.size.height - [[points objectAtIndex:0] floatValue];
     
-    CGContextMoveToPoint(context, xpos, ypos);
+    //矩阵变换，调整坐标原点到左下角。
+    CGContextTranslateCTM(context, 0.0f, bounds.size.height);
+    CGContextScaleCTM(context, 1.0f, -1.0f);
+    
+    float xpos = bounds.size.width;
+    //float ypos = bounds.size.height - [[points objectAtIndex:0] floatValue];
+    float ypos = [[points objectAtIndex:0] floatValue];
+    ypos = ypos < 40 ? 0 : ypos - 40 ;
+    CGContextMoveToPoint(context, xpos,ypos);
     for (int i = 1; i < points.count; i++) {
-        xpos -= 5;
+        xpos -= 2;
         ypos = [[points objectAtIndex:i] floatValue];
-        CGContextAddLineToPoint(context, xpos,  bounds.size.height - ypos );
+        ypos = ypos < 40 ? 0 : ypos - 40 ;
+        CGContextAddLineToPoint(context, xpos ,ypos  );
     }
     CGContextStrokePath(context);
     CGContextRestoreGState(context);
-    
 }
 
 - (void)setHeartValue:(NSNumber*)value{
